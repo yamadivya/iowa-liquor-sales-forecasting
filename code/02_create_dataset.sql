@@ -1,0 +1,2 @@
+-- Create BigQuery dataset
+-- Run in Cloud Shell: bq mk --location=US iowa_liquor_pipeline
