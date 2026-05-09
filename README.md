@@ -4,7 +4,7 @@ End-to-end sales forecasting pipeline using **ARIMA_PLUS_XREG** on the
 Iowa Liquor Sales public dataset in Google Cloud BigQuery.
 
 ##  Architecture
-
+```
 BigQuery Public Dataset (Iowa Liquor Sales)
 ↓
 raw_iowa_sales         ← partitioned staging table
@@ -18,7 +18,7 @@ arima_iowa_model       ← ARIMA_PLUS_XREG trained model
 future_regressors_weekly ← holiday + payday regressors
 ↓
 sales_forecast         ← 12-week production forecast
-
+```
 ##  Dataset
 - **Source:** `bigquery-public-data.iowa_liquor_sales.sales`
 - **Stores:** HY-VEE #3 (2633), Central City 2 (4829)
